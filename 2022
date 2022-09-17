@@ -1,0 +1,20 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("MM2 Gui", "Ocean")
+
+-- NEW
+local Mm2new = Window:NewTab("Mm2new")
+local Mm2newSection = Mm2new:NewSection("Mm2new")
+
+
+Mm2newSection:NewButton("Eclipse New", "A Script Hub for some Games", function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomDevRoblox/Eclipse/main/new"))();
+end)
+
+-- OLD
+local Mm2Old = Window:NewTab("Mm2Old")
+local Mm2OldSection = Mm2Old:NewSection("Mm2Old")
+
+
+Mm2OldSection:NewButton("Eclipse Old", "A Script Hub for some Games", function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
